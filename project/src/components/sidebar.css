@@ -1,0 +1,50 @@
+/* For desktop: */
+.sidebar {
+  text-decoration: white;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px; /* Increase the height of the navbar */
+}
+
+.sidebar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  flex-grow: 1; /* Make the links take up equal space */
+  text-align: center; /* Center the text within the links */
+  transition: all 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: #011222;
+  color: white;
+  border-radius: 10px;
+  transform: scale(1.1); /* Add a subtle scale effect on hover */
+}
+
+/* For mobile devices: */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    flex-direction: column; /* Stack the links vertically */
+    height: auto;
+    padding: 10px 0; /* Add some padding */
+  }
+
+  .sidebar a {
+    padding: 12px; /* Adjust padding for mobile */
+    font-size: 14px; /* Reduce font size */
+    width: 100%; /* Make the links span the full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+}

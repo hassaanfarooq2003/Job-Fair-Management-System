@@ -1,0 +1,29 @@
+.employer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employer-table th,
+.employer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.employer-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.employer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employer-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}

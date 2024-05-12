@@ -1,0 +1,93 @@
+.homepage {
+  display: flex;
+  color: black;
+  background-image: url("../images/introduction.svg");
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Scale the image to cover the entire element */
+  align-items: center; /* align items vertically */
+  flex-direction: column; /* stack items vertically */
+  height: 100vh; /* set height to 100% of the viewport height */
+  width: 100vw; /* set width to 100% of the viewport width */
+  background-color: #f5f5f5;
+  padding-left: 2rem; /* add padding to move the content away from the edge */
+  justify-content: flex-end; /* align items to the right */
+}
+
+.homepage__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homepage h1 {
+  margin-top: 10%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.homepage p {
+  font-size: 1.5rem;
+  color: black;
+}
+.homepage__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 10%;
+}
+.homepage img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .homepage h1 {
+    font-size: 2rem;
+  }
+  .homepage img {
+    width: 100%;
+  }
+
+  .homepage p {
+    font-size: 1rem;
+  }
+
+  .homepage__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+button {
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

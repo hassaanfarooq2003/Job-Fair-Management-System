@@ -1,0 +1,82 @@
+/* Employer Profile Body */
+.emp_profile_body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  /* Employer Profile Container */
+  .emp_profile_container {
+    background-color: rgba(255, 255, 255, 0.7); /* Make the background semi-transparent */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border-radius: 20px; /* Increase border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Employer Profile Heading */
+  .emp_profile_heading {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Employer Profile Form Inputs */
+  .emp_profile_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Employer Profile Button */
+  .emp_profile_button {
+    background-color: #0077b6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .emp_profile_button:hover {
+    background-color: #005f8c;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    /* Employer Profile Container */
+    .emp_profile_container {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    /* Employer Profile Heading */
+    .emp_profile_heading {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    /* Employer Profile Form Inputs */
+    .emp_profile_input {
+      padding: 10px 15px;
+    }
+  
+    /* Employer Profile Button */
+    .emp_profile_button {
+      padding: 12px 15px;
+    }
+  }
